@@ -401,6 +401,7 @@ function getLanguageFromFile(file: string) {
     const extension = file.split(".").pop();
     switch (extension) {
         case "ts":
+        case "tsx":
             return "typescript";
         case "js":
             return "javascript";
